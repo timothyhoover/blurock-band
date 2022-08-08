@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-5 rounded-md disabled:bg-gray-500 bg-br-primary text-white font-semibold hover:bg-opacity-90 active:bg-opacity-25 duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-br-primary;
+  }
+  .btn-secondary {
+    @apply px-5 rounded-md text-br-primary font-semibold disabled:border-gray-500 border-2 border-br-primary bg-white disabled:hover:bg-gray-500 hover:bg-br-primary hover:bg-opacity-10 active:bg-opacity-60 focus-visible:bg-opacity-40;
+  }
+  .btn-sm {
+    @apply h-10 text-sm;
+  }
+  .btn-md {
+    @apply h-12 text-base;
+  }
+  .btn-lg {
+    @apply h-14 text-lg;
+  }
+}

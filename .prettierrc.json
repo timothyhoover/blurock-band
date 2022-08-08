@@ -1,0 +1,10 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "pugClassNotation": "attribute",
+  "pugIdNotation": "attribute",
+  "pugWrapAttributesThreshold": 2,
+  "pugAttributeSeparator": "none"
+}
