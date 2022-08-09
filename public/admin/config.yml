@@ -6,12 +6,15 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - name: 'Hero'
-    label: 'Hero'
-    folder: 'content'
-    create: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Button', name: 'button', widget: 'string' }
-      - { label: 'Featured Video', name: 'video', widget: 'video' }
+  - label: 'pages'
+    name: 'pages'
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        file: 'content/pages/index.md'
+        create: false
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Button', name: 'button', widget: 'string' }
+          - { label: 'Featured Video', name: 'video-url', widget: 'string' }
