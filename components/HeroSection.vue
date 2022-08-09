@@ -1,7 +1,4 @@
 <script setup>
-import { marked } from 'marked'
-
-const { path, route } = useRoute()
 const router = useRouter()
 
 const { data } = await useAsyncData('home', () => {
@@ -17,7 +14,7 @@ section(
 )
   div(class='flex flex-col items-center space-y-3 mb-10 lg:mb-0 lg:items-start')
     h1(class='text-2xl lg:text-3xl font-semibold') {{ data?.title }}
-    p(class='pb-5 text-center lg:text-left') Here you can find videos or our live performances, useful links and our up-to-date schedule.
+    p(class='pb-5 text-center lg:text-left') {{ data?.description }}
     form-kit(
       type='button'
       @click='router.push({ path: "/contact" })'
