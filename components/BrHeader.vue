@@ -26,7 +26,7 @@ transition(
     v-if='openNav'
     class='lg:hidden absolute top-0 left-0 z-40 block w-screen h-screen transition-opacity bg-black bg-opacity-30'
   )
-nav(class='bg-br-primary relative z-50' ref='navRef')
+nav(class='bg-white relative z-50' ref='navRef')
   div(class='py-5 shadow-md')
     div(class='flex items-center justify-center')
       div(class='w-full flex items-center justify-between px-3 max-w-7xl')
@@ -35,38 +35,38 @@ nav(class='bg-br-primary relative z-50' ref='navRef')
         div(class='hidden lg:block')
           div(class='ml-10 flex items-baseline xl:space-x-4')
             nuxt-link(
-              class='flex flex-col items-center space-y-3 text-white fill-white hover:fill-br-tertiary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base font-medium transition-all ease-in-out duration-150'
+              class='flex flex-col items-center space-y-3 text-br-primary fill-br-primary hover:fill-br-tertiary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base font-medium transition-all ease-in-out duration-150'
               to='/'
             ) 
               icon-guitar(class='w-8')
               p Home
             nuxt-link(
-              class='flex flex-col items-center space-y-3 text-white hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
+              class='flex flex-col items-center space-y-3 text-br-primary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
               to='/about'
             ) 
               icon-book(class='w-7')
               p About the band
             nuxt-link(
-              class='flex flex-col items-center space-y-3 text-white hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
+              class='flex flex-col items-center space-y-3 text-br-primary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
               to='/bands-we-cover'
             ) 
               icon-music-note(class='w-7')
               p Bands we cover
             nuxt-link(
-              class='flex flex-col items-center space-y-3 text-white hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
+              class='flex flex-col items-center space-y-3 text-br-primary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
               to='https://www.facebook.com/pages/BluRock-Band/59610364387'
               target='_blank'
             ) 
               icon-facebook(class='w-7')
               p Our Facebook page
             nuxt-link(
-              class='flex flex-col items-center space-y-3 text-white hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
+              class='flex flex-col items-center space-y-3 text-br-primary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
               to='/'
             ) 
               icon-calendar(class='w-7')
               p Upcoming shows
             nuxt-link(
-              class='flex flex-col items-center space-y-3 text-white hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
+              class='flex flex-col items-center space-y-3 text-br-primary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
               to='/contact'
             ) 
               icon-mail(class='w-7')
@@ -77,19 +77,19 @@ nav(class='bg-br-primary relative z-50' ref='navRef')
           @click='openNav = !openNav'
         )
           span(
-            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out origin-right rounded-full bg-white right-2 top-3'
+            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out origin-right rounded-full bg-br-primary right-2 top-3'
             :class='{ "scale-x-0 opacity-0": openNav }'
           )
           span(
-            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out -translate-y-1/2 rounded-full bg-white right-2 top-1/2'
+            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out -translate-y-1/2 rounded-full bg-br-primary right-2 top-1/2'
             :class='{ "rotate-[135deg]": openNav }'
           )
           span(
-            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out -translate-y-1/2 rounded-full bg-white right-2 top-1/2'
+            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out -translate-y-1/2 rounded-full bg-br-primary right-2 top-1/2'
             :class='openNav ? "rotate-[225deg]" : "opacity-0"'
           )
           span(
-            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out origin-left rounded-full bg-white right-2 bottom-3'
+            class='lg:hidden absolute w-6 h-[3px] transition-all ease-in-out origin-left rounded-full bg-br-primary right-2 bottom-3'
             :class='{ "scale-x-0 opacity-0": openNav }'
           )
   div(

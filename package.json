@@ -19,7 +19,8 @@
     "@vueuse/core": "^9.1.0",
     "@vueuse/nuxt": "^9.1.0",
     "marked": "^4.0.18",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "swiper": "^8.3.2"
   },
   "prettier": {
     "singleQuote": true,

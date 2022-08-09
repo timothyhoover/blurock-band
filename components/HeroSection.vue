@@ -12,13 +12,15 @@ console.log(data)
 section(
   class='flex flex-col justify-center lg:flex-row lg:justify-between w-full items-center lg:space-x-10 px-5 py-12'
 )
-  div(class='flex flex-col items-center space-y-3 mb-10 lg:mb-0 lg:items-start')
-    h1(class='text-2xl lg:text-3xl font-semibold') {{ data?.title }}
-    p(class='pb-5 text-center lg:text-left') {{ data?.description }}
+  div(class='flex flex-col items-center space-y-3 w-full mb-10 lg:mb-0 lg:items-start')
+    div(class='flex flex-col')
+      h1(class='text-2xl lg:text-3xl font-semibold text-white') {{ data?.title }}
+      div(class='self-end bg-br-tertiary h-2 w-3/5')
+    p(class='pb-5 text-center lg:text-left text-white') {{ data?.description }}
     form-kit(
       type='button'
       @click='router.push({ path: "/contact" })'
-      input-class='btn-secondary btn-md max-w-md'
+      input-class='btn-secondary btn-md max-w-md border-white bg-transparent text-white hover:bg-white hover:bg-opacity-10'
       outer-class='w-full'
       wrapper-class='w-full flex justify-center lg:justify-start'
     )
