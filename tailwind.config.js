@@ -33,5 +33,15 @@ module.exports = {
       }
     }
   },
-  plugins: [formKitTailwind]
+  plugins: [formKitTailwind, require('daisyui')],
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: 'd',
+    darkTheme: 'dark'
+  }
 }

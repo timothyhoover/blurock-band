@@ -4,8 +4,6 @@ const router = useRouter()
 const { data } = await useAsyncData('home', () => {
   return queryContent('/').findOne()
 })
-
-console.log(data)
 </script>
 
 <template lang="pug">

@@ -1,58 +1,31 @@
 <script setup>
-import { EffectCoverflow, Pagination, Navigation } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import 'swiper/css'
-import 'swiper/css/effect-coverflow'
-import 'swiper/css/pagination'
-
-const modules = [EffectCoverflow, Pagination, Navigation]
-
 defineProps(['photos'])
 </script>
 
 <template lang="pug">
-div(
-  v-if='photos?.length'
-  class='flex flex-col lg:flex-row justify-center items-center w-full p-10'
-)
-  div(class='flex flex-col')
-    h3(class='text-3xl font-medium') Gallery
-    div(class='bg-br-success h-2 w-16')
-  swiper(
-    :effect='"coverflow"'
-    :pagination='{ clickable: true }'
-    :grabCursor='true'
-    :slidesPerView='"auto"'
-    navigation
-    :coverflowEffect='{ rotate: 50, stretch: 0, depth: 100, modifier: 1, slideShadows: true }'
-    :modules='modules'
-    class='mySwiper'
+div(class='flex flex-col lg:flex-row justify-between items-center w-full p-10')
+  div(
+    v-for='photo in photos'
+    :key='photos'
+    class='flex flex-col w-full md:w-3/4 lg:w-1/2 order-2 lg:order-1'
   )
-    swiper-slide(v-for='photo in photos' :key='photo')
-      img(:src='photo')
+    div(class='d-carousel w-full rounded-md border-8 border-br-tertiary')
+      #item1(class='d-carousel-item w-full')
+        img(:src='photo' class='w-full')
+      #item2(class='d-carousel-item w-full')
+        img(:src='photo' class='w-full')
+      #item3(class='d-carousel-item w-full')
+        img(:src='photo' class='w-full')
+      #item4(class='d-carousel-item w-full')
+        img(:src='photo' class='w-full')
+    div(class='flex justify-center w-full py-2 gap-2')
+      a(href='#item1' class='d-btn d-btn-xs') 1
+      a(href='#item2' class='d-btn d-btn-xs') 2
+      a(href='#item3' class='d-btn d-btn-xs') 3
+      a(href='#item4' class='d-btn d-btn-xs') 4
+  div(class='flex flex-col items-center w-full lg:w-1/2 order-1 lg:order-2 mb-5 lg:mb-0')
+    div
+      h3(class='text-3xl font-medium') Gallery
+      div(class='bg-br-success h-2 w-12 mb-4')
+    p Scroll through to check out our live setup
 </template>
-
-<style scoped>
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-img {
-  width: auto;
-}
-.swiper-slide {
-  border: 8px solid #000;
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-}
-
-.swiper-button-next {
-  color: black;
-}
-.swiper-button-prev {
-  color: black;
-}
-</style>
