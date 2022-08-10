@@ -18,8 +18,64 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Button', name: 'button', widget: 'string' }
           - { label: 'Featured Video', name: 'video', widget: 'string' }
-          - label: 'Photo Gallery'
-            name: 'photos'
+          - label: 'Photo 1'
+            name: 'photo1'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 2'
+            name: 'photo2'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 3'
+            name: 'photo3'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 4'
+            name: 'photo4'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 5'
+            name: 'photo5'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 6'
+            name: 'photo6'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 7'
+            name: 'photo7'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 8'
+            name: 'photo8'
+            widget: 'image'
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
+          - label: 'Photo 9'
+            name: 'photo9'
             widget: 'image'
             allow_multiple: true
             media_library:
