@@ -18,4 +18,13 @@ member:
     role: Lead Guitar, Keyboard and Vocals
   - name: Richey Bennett
     role: Drums
+members:
+  - name: John Hoover
+    role: Lead Vocals and Rhythm guitar
+  - name: Amy Hoover
+    role: Bass Guitar and Vocals
+  - name: Daniel Cagle
+    role: Lead Guitar, Keyboard and Vocals
+  - name: Richey Bennett
+    role: Drums
 ---
