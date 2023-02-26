@@ -1,5 +1,5 @@
 <script setup>
-import { set } from '@vueuse/core'
+import { onClickOutside, set } from '@vueuse/core'
 
 const route = useRoute()
 

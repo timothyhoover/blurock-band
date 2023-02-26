@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+const { data } = await useAsyncData('about', () => {
+  return queryContent('/').findOne()
+})
+watchEffect(() => {
+  console.log(data)
+})
+</script>
 
 <template lang="pug">
 section(class='py-10 px-5')

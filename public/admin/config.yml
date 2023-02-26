@@ -81,3 +81,15 @@ collections:
             media_library:
               config:
                 multiple: true
+      - label: 'About Page'
+        name: 'about'
+        file: 'content/pages/about.md'
+        create: false
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - label: Members
+            name: members
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
