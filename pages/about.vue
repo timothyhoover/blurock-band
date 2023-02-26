@@ -1,9 +1,9 @@
 <script setup>
 const { data } = await useAsyncData('about', () => {
-  return queryContent('/').findOne()
+  return queryContent('/about').findOne()
 })
 watchEffect(() => {
-  console.log(data)
+  console.log(data.value)
 })
 </script>
 

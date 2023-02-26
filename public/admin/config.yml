@@ -6,12 +6,12 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - label: 'pages'
-    name: 'pages'
+  - label: 'content'
+    name: 'content'
     files:
       - label: 'Home Page'
         name: 'home'
-        file: 'content/pages/index.md'
+        file: 'content/index.md'
         create: false
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
@@ -83,13 +83,13 @@ collections:
                 multiple: true
       - label: 'About Page'
         name: 'about'
-        file: 'content/pages/about.md'
+        file: 'content/about.md'
         create: false
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - label: Members
-            name: member
+            name: members
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
