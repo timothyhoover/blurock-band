@@ -9,15 +9,6 @@ description: The number one comment is about their diverse range of music. One
   band. They enjoy playing Classic Vinyl, Blues, Rock, Country and Gospel. They
   play gigs of all types including clubs, civic functions, weddings, private and
   holiday parties. They also play smaller venue and acoustic gigs.
-member:
-  - name: John Hoover
-    role: " Lead Vocals and Rhythm guitar"
-  - name: Amy Hoover
-    role: Bass Guitar and Vocals
-  - name: Daniel Cagle
-    role: Lead Guitar, Keyboard and Vocals
-  - name: Richey Bennett
-    role: Drums
 members:
   - name: John Hoover
     role: Lead Vocals and Rhythm guitar
