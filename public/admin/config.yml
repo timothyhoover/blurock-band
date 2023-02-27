@@ -18,6 +18,17 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Button', name: 'button', widget: 'string' }
           - { label: 'Featured Video', name: 'video', widget: 'string' }
+          - label: Images
+            name: images
+            widget: list
+            fields:
+              - { label: 'Alt Text', name: 'alt', widget: 'string' }
+              - {
+                  label: 'Image',
+                  name: 'alt',
+                  widget: 'image',
+                  media_library: { config: { multiple: true } }
+                }
           - label: 'Photo 1'
             name: 'photo1'
             widget: 'image'
@@ -94,3 +105,28 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Role, name: role, widget: string }
+      - label: 'Bands We Cover Page'
+        name: 'about'
+        file: 'content/bands-we-cover.md'
+        create: false
+        fields:
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - label: Bands
+            name: bands
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+      - label: 'Upcoming Shows Page'
+        name: 'upcoming-shows'
+        file: 'content/upcoming-shows.md'
+        create: false
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - label: Shows
+            name: shows
+            widget: list
+            fields:
+              - { label: Venue, name: venue, widget: string }
+              - { label: Address, name: address, widget: string }
+              - { label: Date, name: date, widget: date }
