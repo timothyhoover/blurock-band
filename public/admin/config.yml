@@ -88,7 +88,8 @@ collections:
                   - {
                       label: Address Line 2,
                       name: address_line_2,
-                      widget: string
+                      widget: string,
+                      required: false
                     }
                   - { label: City, name: city, widget: string }
                   - { label: State, name: state, widget: string }
