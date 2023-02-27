@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(['images'])
+const props = defineProps(['images', 'gallery-title', 'gallery-description'])
 </script>
 
 <template lang="pug">
@@ -22,7 +22,7 @@ div(class='flex flex-col lg:flex-row justify-between items-center w-full p-10')
       ) {{ index + 1 }}
   div(class='flex flex-col items-center w-full lg:w-1/2 order-1 lg:order-2 mb-5 lg:mb-0')
     div
-      h3(class='text-3xl font-medium') Gallery
+      h3(class='text-3xl font-medium') {{ galleryTitle }}
       div(class='bg-br-success h-2 w-12 mb-4')
-    p Scroll through to check out our live setup
+    p {{ galleryDescription }}
 </template>

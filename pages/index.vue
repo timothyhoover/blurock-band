@@ -26,5 +26,10 @@ nuxt-layout(name='full-width')
   div(class='flex flex-col items-center w-full justify-center')
     div(class='bg-br-primary w-full flex justify-center border-b-8 border-br-tertiary')
       hero-section(class='max-w-screen-xl')
-    band-photos(class='max-w-screen-xl' :images='data?.images')
+    band-photos(
+      class='max-w-screen-xl'
+      :gallery-title='data?.gallery_title'
+      :gallery-description='data?.gallery_description'
+      :images='data?.images'
+    )
 </template>
