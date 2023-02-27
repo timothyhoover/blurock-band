@@ -2,7 +2,13 @@
 title: Upcoming Shows
 description: See below for dates, venue details and addresses
 shows:
-  - date: 2023-03-16T04:54:10.185Z
+  - date: 2023-03-15T05:18:28.010Z
     venue: Test
-    address: 4051 Highland Dr. Denison Tx 75020
+    description: Here's some notes about a venue
+    address:
+      address_line_1: 4051 Highland Dr.
+      city: Denison
+      state: TX
+      zip: " 75020"
+      address_line_2: test
 ---
