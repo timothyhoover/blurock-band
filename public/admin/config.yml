@@ -18,10 +18,10 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Button', name: 'button', widget: 'string' }
           - { label: 'Featured Video', name: 'video', widget: 'string' }
-          - { label: 'Gallery Title', name: 'name', widget: 'string' }
+          - { label: 'Gallery Title', name: 'gallery_title', widget: 'string' }
           - {
               label: 'Gallery Description',
-              name: 'gallery description',
+              name: 'gallery_description',
               widget: 'string'
             }
           - label: Images
@@ -81,12 +81,12 @@ collections:
                 fields:
                   - {
                       label: Address Line 1,
-                      name: address line 1,
+                      name: address_line_1,
                       widget: string
                     }
                   - {
                       label: Address Line 2,
-                      name: address line 2,
+                      name: address_line_2,
                       widget: string
                     }
                   - { label: City, name: city, widget: string }

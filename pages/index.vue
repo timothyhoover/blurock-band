@@ -18,6 +18,7 @@ if (process.client) {
     })
   }
 }
+console.log(data.value)
 </script>
 
 <template lang="pug">
