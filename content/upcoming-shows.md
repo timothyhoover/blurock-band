@@ -10,5 +10,5 @@ shows:
       city: Denison
       state: TX
       zip: " 75020"
-      address_line_2: test
+      address_line_2: ""
 ---
