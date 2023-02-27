@@ -61,7 +61,7 @@ nav(class='bg-white relative z-50' ref='navRef')
               p Our Facebook page
             nuxt-link(
               class='flex flex-col items-center space-y-3 text-br-primary hover:text-br-tertiary px-3 py-2 rounded-md text-sm xl:text-base transition-all ease-in-out duration-150'
-              to='/'
+              to='/upcoming-shows'
             ) 
               icon-calendar(class='w-7')
               p Upcoming shows

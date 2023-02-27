@@ -71,5 +71,25 @@ collections:
             widget: list
             fields:
               - { label: Venue, name: venue, widget: string }
-              - { label: Address, name: address, widget: string }
+              - {
+                  label: Description or Notes,
+                  name: description,
+                  widget: string
+                }
+              - label: Address
+                name: address
+                fields:
+                  - {
+                      label: Address Line 1,
+                      name: address line 1,
+                      widget: string
+                    }
+                  - {
+                      label: Address Line 2,
+                      name: address line 2,
+                      widget: string
+                    }
+                  - { label: City, name: city, widget: string }
+                  - { label: State, name: state, widget: string }
+                  - { label: Zip, name: zip, widget: string }
               - { label: Date, name: date, widget: date }
