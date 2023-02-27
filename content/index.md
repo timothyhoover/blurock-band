@@ -8,13 +8,15 @@ photo6: /images/736bcf6f-c53b-454e-b832-9d650abca7de-2.jpeg
 photo7: /images/8c68919d-001c-4b3c-97b5-2e3bc04320cb-2.jpeg
 photo8: /images/90edb9c0-7bcf-40eb-ac96-9ae29501757f-2.jpeg
 photo9: /images/band-photo-2.jpeg
+name: Gallery
 title: Welcome to BluRock Band
 description: Here you can find videos or our live performances, useful links and
   our up-to-date schedule.
 button: Book Us
 video: https://www.youtube.com/embed/dnNVL0QKcsw
-name: Gallery
+gallery_title: Gallery
 gallery description: Scroll through to check out our live setup
+gallery_description: Scroll through to check out our live setup
 images:
   - image: /images/02b9d006-d523-4dda-8e2f-3ff3966b621b-2.jpeg
     alt: John and Daniel
