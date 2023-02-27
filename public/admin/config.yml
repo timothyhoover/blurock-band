@@ -106,7 +106,7 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Role, name: role, widget: string }
       - label: 'Bands We Cover Page'
-        name: 'about'
+        name: 'bands-we-cover'
         file: 'content/bands-we-cover.md'
         create: false
         fields:
