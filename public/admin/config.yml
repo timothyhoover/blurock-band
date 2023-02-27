@@ -78,6 +78,7 @@ collections:
                 }
               - label: Address
                 name: address
+                widget: object
                 fields:
                   - {
                       label: Address Line 1,
